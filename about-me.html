@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Jamal Anton Williams | Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Personal website of Jamal A. Williams" />
+    <meta name="keywords" content="neuroscience, cognitive neuroscience, research" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Custom styling for images */
+        .profile-pic {
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin: 20px;
+            /* Adjust to move the image slightly away from the text */
+        }
+
+        .brain-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 220px;
+        }
+
+        .pattern-matrix {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+        }
+
+        /* Main white box */
+        .main-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 1000px;
+            /* Adjusted width */
+            position: relative;
+            top: 150px;
+            /* Adjust this for vertical control */
+        }
+
+        /* Add name in the top center of the colored background */
+        .header-name {
+            position: absolute;
+            top: 40px;
+            /* Adjust this value for vertical alignment */
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        /* Navigation tabs - attached to the main white box */
+        .nav-bar {
+            background-color: white;
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .nav-bar ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-bar ul li {
+            margin: 0 1rem;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-bar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section dividers and text formatting */
+        section {
+            margin-top: 2rem;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+            text-align: center;
+            /* Center the section heading */
+        }
+
+        section p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Flexbox to align the profile picture and text side by side */
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow text to wrap beneath the image */
+            align-items: flex-start;
+        }
+
+        .about-section .text-content {
+            flex: 1;
+            padding-right: 20px;
+            max-width: 700px;
+            /* Shrinks the width of the text */
+        }
+
+        .about-section .profile-container {
+            flex-shrink: 0;
+            align-self: flex-start;
+            /* Moves the image up */
+        }
+
+        /* Styling for the grey line with "About Me" in the middle */
+        /*.about-heading {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-heading::before,
+        .about-heading::after {
+            content: '';
+            flex: 1;
+            border-bottom: 2px solid #e0e0e0;
+            margin: 0 1rem;
+        }
+
+        .about-heading h2 {
+            margin: 0;
+            white-space: nowrap;
+        } */
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Add Brain Logo -->
+        <img src="images/brain_with_curved_staff.png" alt="Brain Logo" class="brain-logo" />
+
+        <!-- Name in the center -->
+        <div class="header-name">Jamal Anton Williams</div>
+
+        <!-- Main Section with Tabs -->
+        <div class="main-section">
+            <!-- Navigation Bar (tabs) attached to the white box -->
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="music.html">Music</a></li>
+                </ul>
+            </div>
+
+            <!-- About Me Section -->
+            <section id="about-me">
+                <div class="about-heading">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-section">
+                    <div class="profile-container">
+                        <img src="images/webpage_photo_1.png" alt="Profile Picture" class="profile-pic" />
+                    </div>
+                    <div class="text-content">
+                        <p id="about-me-content">Loading About Me...</p>
+                        <script>
+                            // Load the about_me.txt content
+                            fetch('about_me.txt')
+                                .then(response => response.text())
+                                .then(data => {
+                                    document.getElementById('about-me-content').innerText = data;
+                                })
+                                .catch(error => {
+                                    document.getElementById('about-me-content').innerText = "Error loading About Me content.";
+                                    console.error('Error:', error);
+                                });
+                        </script>
+                    </div>
+                </div>
+            </section>
+
+            <section id="first-section">
+                <header>
+                    <h2>First Section</h2>
+                </header>
+                <p>This section will cover important aspects of my research journey, detailing my projects and areas of
+                    focus.</p>
+            </section>
+
+            <section id="second-section">
+                <header>
+                    <h2>Second Section</h2>
+                </header>
+                <p>More information about my collaborations and contributions to the scientific community.</p>
+            </section>
+
+            <section id="get-started">
+                <header>
+                    <h2>Get Started</h2>
+                </header>
+                <p>If you’d like to learn more, feel free to reach out via the contact information provided below.</p>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
