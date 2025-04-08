@@ -74,6 +74,43 @@
             text-decoration: underline;
         }
 
+        /* Section dividers and text formatting */
+        section {
+            margin-top: 2rem;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+            text-align: center;
+            /* Center the section heading */
+        }
+
+        section p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Flexbox to align the profile picture and text side by side */
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow text to wrap beneath the image */
+            align-items: flex-start;
+        }
+
+        .about-section .text-content {
+            flex: 1;
+            padding-right: 20px;
+            max-width: 700px;
+            /* Shrinks the width of the text */
+        }
+
+        .about-section .profile-container {
+            flex-shrink: 0;
+            align-self: flex-start;
+            /* Moves the image up */
+        }
 
     </style>
 
