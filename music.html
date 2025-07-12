@@ -66,27 +66,43 @@
             text-decoration: underline;
         }
 
+        .music-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
         .music-link {
-            margin: 2rem 0;
             text-align: center;
         }
 
         .music-link a {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: #000000;
+            text-decoration: none;
+        }
+
+        .music-link a:hover {
+            text-decoration: underline;
         }
 
         .music-embed {
             margin-top: 1rem;
-            text-align: center;
         }
 
         .music-embed img {
             width: 100%;
-            max-width: 300px;
+            max-width: 250px;
             border-radius: 8px;
             border: none;
+        }
+
+        @media (max-width: 768px) {
+            .music-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -117,44 +133,48 @@
                     <h2>Music</h2>
                 </header>
 
-                <!-- SoundCloud: motion_correct -->
-                <div class="music-link">
-                    <a href="https://soundcloud.com/motion_correct" target="_blank">soundcloud.com/motion_correct</a>
-                    <div class="music-embed">
-                        <img src="images/motion_correct_image.png" alt="motion_correct">
-                    </div>
-                </div>
+                <!-- Music Grid -->
+                <div class="music-grid">
 
-                <!-- SoundCloud: jaykozmik -->
-                <div class="music-link">
-                    <a href="https://soundcloud.com/jaykozmik" target="_blank">soundcloud.com/jaykozmik</a>
-                    <div class="music-embed">
-                        <img src="images/jaykozmik_image.png" alt="jaykozmik">
+                    <!-- SoundCloud: motion_correct -->
+                    <div class="music-link">
+                        <a href="https://soundcloud.com/motion_correct" target="_blank">soundcloud.com/motion_correct</a>
+                        <div class="music-embed">
+                            <img src="images/motion_correct_image.png" alt="motion_correct">
+                        </div>
                     </div>
-                </div>
 
-                <!-- NTS Show 1 -->
-                <div class="music-link">
-                    <a href="https://www.nts.live/shows/metamorphosis-2024/episodes/metamorphosis-2024-transition-matrix-w-jamal-nasim-21st-april-2024"
-                        target="_blank">
-                        NTS: Metamorphosis 2024 – Transition Matrix
-                    </a>
-                    <div class="music-embed">
-                        <img src="images/transition_matrix.png" alt="NTS Show 1">
+                    <!-- SoundCloud: jaykozmik -->
+                    <div class="music-link">
+                        <a href="https://soundcloud.com/jaykozmik" target="_blank">soundcloud.com/jaykozmik</a>
+                        <div class="music-embed">
+                            <img src="images/jaykozmik_image.png" alt="jaykozmik">
+                        </div>
                     </div>
-                </div>
 
-                <!-- NTS Show 2 -->
-                <div class="music-link">
-                    <a href="https://www.nts.live/shows/heatwave/episodes/heatwave-transition-matrix-w-jamal-nasim-latin-special-12th-august-2024"
-                        target="_blank">
-                        NTS: Heatwave – Transition Matrix - Latin Special
-                    </a>
-                    <div class="music-embed">
-                        <img src="images/transition_matrix_latin_special.png" alt="NTS Show 2">
+                    <!-- NTS Show 1 -->
+                    <div class="music-link">
+                        <a href="https://www.nts.live/shows/metamorphosis-2024/episodes/metamorphosis-2024-transition-matrix-w-jamal-nasim-21st-april-2024"
+                            target="_blank">
+                            NTS: Metamorphosis 2024 – Transition Matrix
+                        </a>
+                        <div class="music-embed">
+                            <img src="images/transition_matrix.png" alt="NTS Show 1">
+                        </div>
                     </div>
-                </div>
 
+                    <!-- NTS Show 2 -->
+                    <div class="music-link">
+                        <a href="https://www.nts.live/shows/heatwave/episodes/heatwave-transition-matrix-w-jamal-nasim-latin-special-12th-august-2024"
+                            target="_blank">
+                            NTS: Heatwave – Transition Matrix - Latin Special
+                        </a>
+                        <div class="music-embed">
+                            <img src="images/transition_matrix_latin_special.png" alt="NTS Show 2">
+                        </div>
+                    </div>
+
+                </div>
             </section>
         </div>
     </div>
