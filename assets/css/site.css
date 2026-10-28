@@ -1,10 +1,10 @@
 :root {
-  --paper: #f7f7f5;
-  --ink: #222222;
-  --muted: #6b6b6b;
-  --line: #e8e8e8;
-  --accent: #2b70a6;
-  --accent-hover: #174c77;
+  --paper: #0d0d0f;
+  --ink: #f4f1ed;
+  --muted: #c8c4bf;
+  --line: #34343a;
+  --accent: #8bc4ee;
+  --accent-hover: #c8e8ff;
   --page-width: 930px;
 }
 
@@ -18,7 +18,7 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover, a:focus-visible { color: var(--accent-hover); text-decoration: underline; }
 .site-header {
-  position: sticky; top: 0; z-index: 10; width: 100%; background: rgba(247, 247, 245, 0.96);
+  position: sticky; top: 0; z-index: 10; width: 100%; background: rgba(13, 13, 15, 0.96);
   border-bottom: 1px solid var(--line); backdrop-filter: blur(8px);
 }
 .nav-shell {
@@ -26,13 +26,13 @@ a:hover, a:focus-visible { color: var(--accent-hover); text-decoration: underlin
   max-width: calc(var(--page-width) + 32px); min-height: 63px; margin: 0 auto; padding: 0 16px;
 }
 .professional-links { display: flex; align-items: center; gap: 0.88rem; white-space: nowrap; }
-.professional-links a { display: inline-flex; width: 1.45rem; height: 1.45rem; align-items: center; justify-content: center; color: #555; }
+.professional-links a { display: inline-flex; width: 1.45rem; height: 1.45rem; align-items: center; justify-content: center; color: #ded9d3; }
 .professional-links a:hover, .professional-links a:focus-visible { color: var(--accent); text-decoration: none; }
 .professional-links svg { width: 1.28rem; height: 1.28rem; fill: currentColor; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.menu-toggle { display: none; padding: 0.4rem 0.55rem; color: var(--ink); border: 1px solid #d7d7d7; border-radius: 4px; background: var(--paper); font: inherit; }
+.menu-toggle { display: none; padding: 0.4rem 0.55rem; color: var(--ink); border: 1px solid #5b5b62; border-radius: 4px; background: var(--paper); font: inherit; }
 .site-nav { display: flex; align-items: center; gap: 1.35rem; }
-.site-nav a { color: #3e3e3e; font-size: 0.92rem; text-transform: lowercase; }
+.site-nav a { color: #ded9d3; font-size: 0.92rem; text-transform: lowercase; }
 .site-nav a:hover, .site-nav a:focus-visible, .site-nav a[aria-current="page"] { color: var(--accent); text-decoration: none; }
 main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding: 2.7rem 0 5rem; }
 .page-heading { margin: 0 0 0.15rem; font-size: 2rem; font-weight: 400; letter-spacing: -0.03em; }
@@ -44,11 +44,11 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .section-title { margin: 3.4rem 0 1.25rem; padding-bottom: 0.42rem; border-bottom: 1px solid var(--line); font-size: 1.42rem; font-weight: 400; letter-spacing: -0.02em; }
 .publication-list { margin: 0; padding: 0; list-style: none; counter-reset: item; }
 .publication-list li { position: relative; padding: 0 0 1.3rem 1.65rem; }
-.publication-list li::before { position: absolute; left: 0; top: 0.08rem; color: #858585; content: counter(item) "."; counter-increment: item; }
+.publication-list li::before { position: absolute; left: 0; top: 0.08rem; color: #bcb8b2; content: counter(item) "."; counter-increment: item; }
 .publication-title { font-weight: 500; }
 .publication-meta { display: block; color: var(--muted); }
 .cv-actions { display: flex; gap: 1rem; align-items: center; margin: 0 0 1.3rem; }
-.button-link { display: inline-block; padding: 0.42rem 0.78rem; border: 1px solid #c9c9c9; border-radius: 4px; color: var(--ink); font-size: 0.91rem; }
+.button-link { display: inline-block; padding: 0.42rem 0.78rem; border: 1px solid #777780; border-radius: 4px; color: var(--ink); font-size: 0.91rem; }
 .button-link:hover, .button-link:focus-visible { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 .cv-frame { width: 100%; height: min(1030px, 125vw); border: 1px solid var(--line); }
 .media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.35rem 1.6rem; margin-top: 0.75rem; }
