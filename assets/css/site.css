@@ -1,5 +1,5 @@
 :root {
-  --paper: #ffffff;
+  --paper: #f7f7f5;
   --ink: #222222;
   --muted: #6b6b6b;
   --line: #e8e8e8;
@@ -18,28 +18,28 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover, a:focus-visible { color: var(--accent-hover); text-decoration: underline; }
 .site-header {
-  position: sticky; top: 0; z-index: 10; width: 100%; background: rgba(255, 255, 255, 0.96);
+  position: sticky; top: 0; z-index: 10; width: 100%; background: rgba(247, 247, 245, 0.96);
   border-bottom: 1px solid var(--line); backdrop-filter: blur(8px);
 }
 .nav-shell {
   display: flex; align-items: center; justify-content: space-between;
   max-width: calc(var(--page-width) + 32px); min-height: 63px; margin: 0 auto; padding: 0 16px;
 }
-.professional-links { display: flex; align-items: center; gap: 0.72rem; white-space: nowrap; }
-.professional-links a { display: inline-flex; width: 1.05rem; height: 1.05rem; align-items: center; justify-content: center; color: #555; }
+.professional-links { display: flex; align-items: center; gap: 0.88rem; white-space: nowrap; }
+.professional-links a { display: inline-flex; width: 1.45rem; height: 1.45rem; align-items: center; justify-content: center; color: #555; }
 .professional-links a:hover, .professional-links a:focus-visible { color: var(--accent); text-decoration: none; }
-.professional-links svg { width: 1rem; height: 1rem; fill: currentColor; }
+.professional-links svg { width: 1.28rem; height: 1.28rem; fill: currentColor; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.menu-toggle { display: none; padding: 0.4rem 0.55rem; color: var(--ink); border: 1px solid #d7d7d7; border-radius: 4px; background: white; font: inherit; }
+.menu-toggle { display: none; padding: 0.4rem 0.55rem; color: var(--ink); border: 1px solid #d7d7d7; border-radius: 4px; background: var(--paper); font: inherit; }
 .site-nav { display: flex; align-items: center; gap: 1.35rem; }
 .site-nav a { color: #3e3e3e; font-size: 0.92rem; text-transform: lowercase; }
 .site-nav a:hover, .site-nav a:focus-visible, .site-nav a[aria-current="page"] { color: var(--accent); text-decoration: none; }
-main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding: 3.4rem 0 5rem; }
+main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding: 2.7rem 0 5rem; }
 .page-heading { margin: 0 0 0.15rem; font-size: 2rem; font-weight: 400; letter-spacing: -0.03em; }
 .page-description { margin: 0 0 2.25rem; color: var(--muted); font-size: 0.98rem; }
 .about-intro { position: relative; display: flow-root; margin-top: 0.2rem; }
 .profile-image { float: right; width: min(255px, 35%); margin: 0.35rem 0 1.35rem 2.35rem; border-radius: 2px; object-fit: cover; }
-.brain-logo { position: absolute; top: -7rem; right: 2.25rem; width: 146px; height: auto; }
+.brain-logo { position: absolute; top: -9.2rem; right: 1rem; width: 219px; height: auto; }
 .about-intro p { margin: 0 0 1.22rem; }
 .section-title { margin: 3.4rem 0 1.25rem; padding-bottom: 0.42rem; border-bottom: 1px solid var(--line); font-size: 1.42rem; font-weight: 400; letter-spacing: -0.02em; }
 .publication-list { margin: 0; padding: 0; list-style: none; counter-reset: item; }
@@ -59,11 +59,11 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .site-footer { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding: 1.45rem 0 2.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; }
 @media (max-width: 650px) {
   .nav-shell { min-height: 57px; } .menu-toggle { display: inline-block; }
-  .site-nav { display: none; position: absolute; top: 57px; right: 0; left: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 0.35rem 20px 0.65rem; border-bottom: 1px solid var(--line); background: white; }
+  .site-nav { display: none; position: absolute; top: 57px; right: 0; left: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 0.35rem 20px 0.65rem; border-bottom: 1px solid var(--line); background: var(--paper); }
   .site-nav.is-open { display: flex; } .site-nav a { padding: 0.45rem 0; }
   main { width: min(var(--page-width), calc(100% - 32px)); padding-top: 2.3rem; }
   .profile-image { width: 43%; margin-left: 1.25rem; } .brain-logo { display: none; } .media-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
 @media (max-width: 420px) {
-  .professional-links { gap: 0.55rem; } .profile-image { float: none; width: min(255px, 100%); margin: 0.25rem 0 1.35rem; } .page-heading { font-size: 1.7rem; }
+  .professional-links { gap: 0.65rem; } .profile-image { float: none; width: min(255px, 100%); margin: 0.25rem 0 1.35rem; } .page-heading { font-size: 1.7rem; }
 }
