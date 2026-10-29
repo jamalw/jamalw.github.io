@@ -3,8 +3,8 @@
   --ink: #f4f1ed;
   --muted: #c8c4bf;
   --line: #34343a;
-  --accent: #8bc4ee;
-  --accent-hover: #c8e8ff;
+  --accent: #3ecfc4;
+  --accent-hover: #a7f3ec;
   --page-width: 930px;
 }
 
@@ -38,10 +38,14 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .page-heading { margin: 0 0 0.15rem; font-size: 2rem; font-weight: 400; letter-spacing: -0.03em; }
 .page-description { margin: 0 0 2.25rem; color: var(--muted); font-size: 0.98rem; }
 .about-intro { position: relative; display: flow-root; margin-top: 0.2rem; }
-.profile-image { float: right; width: min(255px, 35%); margin: 0.35rem 0 1.35rem 2.35rem; border-radius: 2px; object-fit: cover; }
-.brain-logo { position: absolute; top: -9.2rem; right: 1rem; width: 219px; height: auto; }
+.profile-image { float: right; width: min(217px, 29.75%); margin: 0.35rem 0 1.35rem 2.35rem; border-radius: 2px; object-fit: cover; }
+.brain-logo { position: absolute; top: -9.2rem; right: 1rem; width: 186px; height: auto; }
 .about-intro p { margin: 0 0 1.22rem; }
 .section-title { margin: 3.4rem 0 1.25rem; padding-bottom: 0.42rem; border-bottom: 1px solid var(--line); font-size: 1.42rem; font-weight: 400; letter-spacing: -0.02em; }
+.news-list { margin: 0; padding: 0; list-style: none; }
+.news-list li { display: grid; grid-template-columns: minmax(8.4rem, 10rem) minmax(0, 1fr); gap: 1rem; padding: 0 0 1.2rem; }
+.news-date { color: var(--muted); font-weight: 500; }
+.news-date::after { content: ":"; }
 .publication-list { margin: 0; padding: 0; list-style: none; counter-reset: item; }
 .publication-list li { position: relative; padding: 0 0 1.3rem 1.65rem; }
 .publication-list li::before { position: absolute; left: 0; top: 0.08rem; color: #bcb8b2; content: counter(item) "."; counter-increment: item; }
@@ -53,7 +57,9 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .cv-frame { width: 100%; height: min(1030px, 125vw); border: 1px solid var(--line); }
 .media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.35rem 1.6rem; margin-top: 0.75rem; }
 .media-card { min-width: 0; }
-.media-card img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--line); }
+.media-card img { display: block; width: 50%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--line); }
+.media-card--mix { display: flex; flex-direction: column; justify-content: flex-end; min-height: 9rem; padding: 1.2rem; border: 1px solid var(--line); background: #2d2d30; }
+.media-card--mix h2 { margin-top: 0; }
 .media-card h2 { margin: 0.78rem 0 0.16rem; font-size: 1rem; font-weight: 500; line-height: 1.35; }
 .media-card p { margin: 0; color: var(--muted); font-size: 0.91rem; line-height: 1.45; }
 .site-footer { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding: 1.45rem 0 2.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; }
@@ -62,8 +68,8 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
   .site-nav { display: none; position: absolute; top: 57px; right: 0; left: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 0.35rem 20px 0.65rem; border-bottom: 1px solid var(--line); background: var(--paper); }
   .site-nav.is-open { display: flex; } .site-nav a { padding: 0.45rem 0; }
   main { width: min(var(--page-width), calc(100% - 32px)); padding-top: 2.3rem; }
-  .profile-image { width: 43%; margin-left: 1.25rem; } .brain-logo { display: none; } .media-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .profile-image { width: 36.55%; margin-left: 1.25rem; } .brain-logo { display: none; } .media-grid { grid-template-columns: 1fr; gap: 2rem; } .news-list li { grid-template-columns: 1fr; gap: 0.1rem; }
 }
 @media (max-width: 420px) {
-  .professional-links { gap: 0.65rem; } .profile-image { float: none; width: min(255px, 100%); margin: 0.25rem 0 1.35rem; } .page-heading { font-size: 1.7rem; }
+  .professional-links { gap: 0.65rem; } .profile-image { float: none; width: min(217px, 100%); margin: 0.25rem 0 1.35rem; } .page-heading { font-size: 1.7rem; }
 }
