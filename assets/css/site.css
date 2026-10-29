@@ -55,11 +55,9 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .button-link { display: inline-block; padding: 0.42rem 0.78rem; border: 1px solid #777780; border-radius: 4px; color: var(--ink); font-size: 0.91rem; }
 .button-link:hover, .button-link:focus-visible { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 .cv-frame { width: 100%; height: min(1030px, 125vw); border: 1px solid var(--line); }
-.media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.35rem 1.6rem; margin-top: 0.75rem; }
+.media-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.15rem 1.35rem; margin-top: 0.75rem; }
 .media-card { min-width: 0; }
 .media-card img { display: block; width: 50%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--line); }
-.media-card--mix { display: flex; flex-direction: column; justify-content: flex-end; min-height: 9rem; padding: 1.2rem; border: 1px solid var(--line); background: #2d2d30; }
-.media-card--mix h2 { margin-top: 0; }
 .media-card h2 { margin: 0.78rem 0 0.16rem; font-size: 1rem; font-weight: 500; line-height: 1.35; }
 .media-card p { margin: 0; color: var(--muted); font-size: 0.91rem; line-height: 1.45; }
 .site-footer { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding: 1.45rem 0 2.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; }
