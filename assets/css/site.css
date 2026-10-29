@@ -57,7 +57,7 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .cv-frame { width: 100%; height: min(1030px, 125vw); border: 1px solid var(--line); }
 .media-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.15rem 1.35rem; margin-top: 0.75rem; }
 .media-card { min-width: 0; }
-.media-card img { display: block; width: 50%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--line); }
+.media-card img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--line); }
 .media-card h2 { margin: 0.78rem 0 0.16rem; font-size: 1rem; font-weight: 500; line-height: 1.35; }
 .media-card p { margin: 0; color: var(--muted); font-size: 0.91rem; line-height: 1.45; }
 .site-footer { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding: 1.45rem 0 2.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; }
