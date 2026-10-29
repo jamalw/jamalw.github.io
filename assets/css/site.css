@@ -27,6 +27,9 @@ a:hover, a:focus-visible { color: var(--accent-hover); text-decoration: underlin
 }
 .professional-links { display: flex; align-items: center; gap: 0.88rem; white-space: nowrap; }
 .professional-links a { display: inline-flex; width: 1.45rem; height: 1.45rem; align-items: center; justify-content: center; color: #ded9d3; }
+.professional-links a[aria-label="Google Scholar"] { order: 1; }
+.professional-links a[aria-label="Email"], .professional-links a[aria-label="Gmail"] { order: 2; }
+.professional-links a[aria-label="Bluesky"] { order: 3; }
 .professional-links a:hover, .professional-links a:focus-visible { color: var(--accent); text-decoration: none; }
 .professional-links svg { width: 1.28rem; height: 1.28rem; fill: currentColor; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
@@ -40,7 +43,7 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .page-description { margin: 0 0 2.25rem; color: var(--muted); font-size: 0.98rem; }
 .about-intro { position: relative; display: flow-root; margin-top: 0.2rem; }
 .profile-image { float: right; width: min(217px, 29.75%); margin: 0.35rem 0 1.35rem 2.35rem; border-radius: 2px; object-fit: cover; }
-.brain-logo { position: absolute; top: -9.2rem; right: min(1rem, calc((var(--page-width) - 100vw) / 2 + 2rem)); width: 186px; height: auto; }
+.brain-logo { position: absolute; top: -8.7rem; right: min(1rem, calc((var(--page-width) - 100vw) / 2 + 2rem)); width: 186px; height: auto; }
 .about-intro p { margin: 0 0 1.22rem; }
 .section-title { margin: 3.4rem 0 1.25rem; padding-bottom: 0.42rem; border-bottom: 1px solid var(--line); font-size: 1.42rem; font-weight: 400; letter-spacing: -0.02em; }
 .news-list { margin: 0; padding: 0; list-style: none; }
