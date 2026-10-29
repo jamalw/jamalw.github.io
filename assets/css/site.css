@@ -35,6 +35,7 @@ a:hover, a:focus-visible { color: var(--accent-hover); text-decoration: underlin
 .site-nav a { color: #ded9d3; font-size: 0.92rem; text-transform: lowercase; }
 .site-nav a:hover, .site-nav a:focus-visible, .site-nav a[aria-current="page"] { color: var(--accent); text-decoration: none; }
 main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding: 2.7rem 0 5rem; }
+.music-page { width: min(1200px, calc(100% - 40px)); }
 .page-heading { margin: 0 0 0.15rem; font-size: 2rem; font-weight: 400; letter-spacing: -0.03em; }
 .page-description { margin: 0 0 2.25rem; color: var(--muted); font-size: 0.98rem; }
 .about-intro { position: relative; display: flow-root; margin-top: 0.2rem; }
@@ -65,7 +66,7 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
   .nav-shell { min-height: 57px; } .menu-toggle { display: inline-block; }
   .site-nav { display: none; position: absolute; top: 57px; right: 0; left: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 0.35rem 20px 0.65rem; border-bottom: 1px solid var(--line); background: var(--paper); }
   .site-nav.is-open { display: flex; } .site-nav a { padding: 0.45rem 0; }
-  main { width: min(var(--page-width), calc(100% - 32px)); padding-top: 2.3rem; }
+  main, .music-page { width: min(var(--page-width), calc(100% - 32px)); padding-top: 2.3rem; }
   .profile-image { width: 36.55%; margin-left: 1.25rem; } .brain-logo { display: none; } .media-grid { grid-template-columns: 1fr; gap: 2rem; } .news-list li { grid-template-columns: 1fr; gap: 0.1rem; }
 }
 @media (max-width: 420px) {
