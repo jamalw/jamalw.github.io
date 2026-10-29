@@ -39,7 +39,7 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .page-description { margin: 0 0 2.25rem; color: var(--muted); font-size: 0.98rem; }
 .about-intro { position: relative; display: flow-root; margin-top: 0.2rem; }
 .profile-image { float: right; width: min(217px, 29.75%); margin: 0.35rem 0 1.35rem 2.35rem; border-radius: 2px; object-fit: cover; }
-.brain-logo { position: absolute; top: -9.2rem; right: 1rem; width: 186px; height: auto; }
+.brain-logo { position: absolute; top: -9.2rem; right: min(1rem, calc((var(--page-width) - 100vw) / 2 + 2rem)); width: 186px; height: auto; }
 .about-intro p { margin: 0 0 1.22rem; }
 .section-title { margin: 3.4rem 0 1.25rem; padding-bottom: 0.42rem; border-bottom: 1px solid var(--line); font-size: 1.42rem; font-weight: 400; letter-spacing: -0.02em; }
 .news-list { margin: 0; padding: 0; list-style: none; }
