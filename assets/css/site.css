@@ -45,7 +45,7 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .profile-image { float: right; width: min(217px, 29.75%); margin: 0.35rem 0 1.35rem 2.35rem; border-radius: 2px; object-fit: cover; }
 .brain-logo { position: absolute; top: -8.7rem; right: min(1rem, calc((var(--page-width) - 100vw) / 2 + 2rem)); width: 186px; height: auto; }
 .about-intro p { margin: 0 0 1.22rem; }
-.section-title { margin: 3.4rem 0 1.25rem; padding-bottom: 0.42rem; border-bottom: 1px solid var(--line); font-size: 1.42rem; font-weight: 400; letter-spacing: -0.02em; }
+.section-title { margin: 1.25rem 0 1.25rem; padding-bottom: 0.42rem; border-bottom: 1px solid var(--line); font-size: 1.42rem; font-weight: 400; letter-spacing: -0.02em; }
 .news-list { margin: 0; padding: 0; list-style: none; }
 .news-list li { display: grid; grid-template-columns: minmax(8.4rem, 10rem) minmax(0, 1fr); gap: 1rem; padding: 0 0 1.2rem; }
 .news-date { color: var(--muted); font-weight: 500; }
