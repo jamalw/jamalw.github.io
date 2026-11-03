@@ -41,6 +41,7 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .music-page { width: min(1091px, calc(100% - 40px)); }
 .page-heading { margin: 0 0 0.15rem; font-size: 2rem; font-weight: 400; letter-spacing: -0.03em; }
 .page-description { margin: 0 0 2.25rem; color: var(--muted); font-size: 0.98rem; }
+.publications-page .page-description { margin-bottom: 1.35rem; }
 .about-intro { position: relative; display: flow-root; margin-top: 0.2rem; }
 .profile-image { float: right; width: min(217px, 29.75%); margin: 0.35rem 0 1.35rem 2.35rem; border-radius: 2px; object-fit: cover; }
 .brain-logo { position: absolute; top: -8.7rem; right: min(1rem, calc((var(--page-width) - 100vw) / 2 + 2rem)); width: 186px; height: auto; }
