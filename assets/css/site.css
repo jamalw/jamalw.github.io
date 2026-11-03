@@ -61,7 +61,9 @@ main { width: min(var(--page-width), calc(100% - 40px)); margin: 0 auto; padding
 .cv-actions { display: flex; gap: 1rem; align-items: center; margin: 0 0 1.3rem; }
 .button-link { display: inline-block; padding: 0.42rem 0.78rem; border: 1px solid #777780; border-radius: 4px; color: var(--ink); font-size: 0.91rem; }
 .button-link:hover, .button-link:focus-visible { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-.cv-frame { width: 100%; height: clamp(2800px, calc((100vw - 40px) * 9.1), 7500px); border: 1px solid var(--line); }
+.cv-viewer { height: clamp(520px, 78vh, 900px); height: clamp(520px, 78dvh, 900px); overflow-y: auto; overscroll-behavior: contain; padding: 0.9rem; border: 1px solid var(--line); background: #1d1d1f; touch-action: pan-y; -webkit-overflow-scrolling: touch; }
+.cv-page { display: block; width: 100%; height: auto; margin: 0 auto 0.9rem; background: #fff; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.24); }
+.cv-page:last-child { margin-bottom: 0; }
 .media-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.15rem 1.35rem; margin-top: 0.75rem; }
 .media-card { min-width: 0; }
 .media-card img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--line); }
